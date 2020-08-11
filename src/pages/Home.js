@@ -6,6 +6,7 @@ import Contact from '../containers/Contact';
 import Events from '../containers/Events';
 import Students from '../containers/Students';
 import Comments from '../containers/Comments';
+import Signup from '../containers/Signup';
 
 export const Home = () => {
     return (
@@ -15,6 +16,7 @@ export const Home = () => {
             <Currics />
             <Students />
             <Comments />
+            <Signup />
             <Events />
             <Contact />
         </>
