@@ -8,12 +8,14 @@ import Students from '../containers/Students';
 import Comments from '../containers/Comments';
 import Signup from '../containers/Signup';
 import Payment from '../containers/Payment';
+import Thousand from '../containers/Thousand';
 
 export const Home = () => {
     return (
         <>
             <FirstPage />
             <Header />
+            <Thousand />
             <Currics />
             <Students />
             <Comments />
