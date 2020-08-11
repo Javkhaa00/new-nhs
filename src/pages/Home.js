@@ -7,6 +7,7 @@ import Events from '../containers/Events';
 import Students from '../containers/Students';
 import Comments from '../containers/Comments';
 import Signup from '../containers/Signup';
+import Payment from '../containers/Payment';
 
 export const Home = () => {
     return (
@@ -18,6 +19,7 @@ export const Home = () => {
             <Comments />
             <Signup />
             <Events />
+            <Payment />
             <Contact />
         </>
     )
