@@ -3,13 +3,13 @@ import React from "react";
 export const Events = () => {
     return (
         <div className="events">
-            <span className="events--title">Нэстээр сонин сайхан</span>
+            <div className="events--title">Нэстээр сонин сайхан</div>
             <div className="events--wrapper">
-                <span className="events--wrapper--desc">
+                <div className="events--wrapper--desc">
                     Жигүүртэн шувууд лугаа адил эрх чөлөөтэй нисэж, тэнгэрийг эзэгнэх чухам тэр чин хүсэл эрмэлзэл биднийг гэнэхэн мөрөөдөгчдөөс дэлхийг.
-                </span>
+                </div>
                 <div className="events--wrapper--every">
-                    <div className="events--wrapper--every--button">Бүгд</div>
+                    <div className="events--wrapper--every--button">Бүх мэдээ </div>
                 </div>
             </div>
             <div className="events--all-cards">
