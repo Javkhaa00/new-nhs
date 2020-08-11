@@ -6,16 +6,15 @@ const FirstPage = () => {
         <div className="first-page">
             <div className="layer">
                 <ul className="first-page--text-container">
-                    <li className="first-page--text">Nest High School</li>
-                    <li className="first-page--text1">Ирээдүйн технологийг бүтээнэ</li>
-                    <li className="first-page--text2">
-                        Жигүүртэн шувууд лугаа адил эрх чөлөөтэй нисэж, тэнгэрийг эзэгнэх тэр чин хүсэл эрмэлзэл биднийг гэнэхэн мөрөөдөгчдөөс дэлхийг хэрэн нисэх агуу технологи эзэмшигчид болгон хувиргажээ.
-                        </li>
-                    <li><div className="first-page--signup">Бүртгүүлэх</div></li>
+                    <li className="first-page--text"> АНУ-аас Монгол Улсад суугаа онц бөгөөд бүрэн эр...</li>
+                    <li className="first-page--text1">
+                        Өнөөдөр болж буй үйл явдал боловсролын салбарт төдийгүй Монголын ирээдүйд хийж буй том хөрөнгө оруулалт. Энэ чиглэлээр гүнзгийрүүлж сурахаар зорьсон сурагчид, эцэг эхээр нь бахархаж байна.
+                    </li>
+                    <li><div className="first-page--more">Дэлгэрэнгүй </div></li>
                 </ul>
-                <div className="pseudo-white" />
-                <div className="pseudo-gray" />
-                <div className="pseudo-gray-layer" />
+                <div className="white" />
+                <div className="gray" />
+                <div className="gray-layer" />
             </div>
         </div>
     )

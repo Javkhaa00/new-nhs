@@ -1,44 +1,49 @@
 .first-page {
-  background-image: url("/assets/first-page.png");
+  background-image: url("/assets/usaambassador.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;;
   height: 100vh;
   width: 100%;
   // text-transform: uppercase;
   &--text-container {
-    margin-left: 8%;
-    display: inline-block;
+    margin-left: 6%;
+    display: flex;
+    flex-direction: column;
     width: 30%;
   }
   &--text {
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100;
-    color: #f9cd0c;
+    font-family: Montserrat;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 5%;
   }
   &--text1 {
-    font-size: 48px;
-    font-weight: 800;
-    color: $white;
-  }
-  &--text2 {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 200;
+    word-spacing: 1px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    font-size: 13px;
     color: white;
   }
-  &--signup {
+  &--more {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    font-size: 22px;
-    color: $white;
-    background-color: #00B086;
-    height: 58px;
+    font-size: 20px;
+    height: 48px;
     width: 224px;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: $white;
     border-radius: 12px;
+  }
+  &--more::after {
+    margin-left: 5%;
+    content: url('/assets/arrow.png');
   }
 }
 
@@ -52,7 +57,7 @@
   z-index: 0;
 }
 
-.pseudo-white {
+.white {
   content: "";
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   background-color: white;
@@ -62,7 +67,7 @@
   bottom: 0;
   right: 0;
 }
-.pseudo-gray {
+.gray {
   clip-path: polygon(100% 100%, 0 35%, 0 100%);
   background-color: white;
   height: 22%;
@@ -72,7 +77,7 @@
   left: 0;
   opacity: 0.5;
 }
-.pseudo-gray-layer {
+.gray-layer {
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
   background-color: white;
   height: 19%;
