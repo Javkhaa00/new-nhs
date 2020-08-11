@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Signup = () => {
-    const [countdownDate, setCountdownDate] = useState(new Date('9/1/2020').getTime());
+    const [countdownDate, setCountdownDate] = useState(new Date('9/10/2020').getTime());
     const [state, setState] = useState({
         days: 0,
         hours: 0,
