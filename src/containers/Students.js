@@ -9,7 +9,7 @@ export const Students = () => {
 
     const [cards, setCards] = useState([{}, {}, {}, {}, {}]);
     const [activeIndex, setActive] = useState(0);
-
+    
     const renderCard = (card, index) => {
         const diff = Math.abs(activeIndex - index);
         let scale = diff * 10;
