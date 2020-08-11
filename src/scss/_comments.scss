@@ -1,4 +1,85 @@
 .comments {
-    height: 50vh;
-    width: 100%;
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  &--row {
+    display: flex;
+    flex-direction: row;
+    height: 32%;
+    width: 80%;
+    padding-bottom: 5%;
+    // justify-content: center;
+    align-items: center;
+  }
+  &--card {
+    height: 70%;
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 24px;
+    &--img {
+      height: 100%;
+      width: 23%;
+      padding-right: 5%;
+      img {
+        border: 2px solid #00b086;
+        border-radius: 40px;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &--column {
+      display: flex;
+      flex-direction: column;
+      &--name {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #040404;
+      }
+      &--position {
+        width: 100%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height */
+
+        color: #00b086;
+      }
+    }
+    &--text {
+      height: 100%;
+      width: 80%;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #212121;
+      opacity: 0.75;
+    }
+  }
 }
+
+// .swiper-container {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }

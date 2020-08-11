@@ -1,9 +1,26 @@
 import React from 'react';
+import { CommentsCards } from "../components/CommentsCards";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination, Controller } from 'swiper';
+import 'swiper/swiper-bundle.css';
+
+SwiperCore.use([Navigation, Pagination, Controller]);
 
 export const Comments = () => {
     return (
         <div className="comments">
-            <h1>DWA</h1>
+            <CommentsCards />
+            {/* <Swiper
+                loop={true}
+                navigation
+                pagination
+                spaceBetween={20}
+                slidesPerView={3}
+            >
+                <SwiperSlide>SDASD</SwiperSlide>
+                <SwiperSlide>DSADSA</SwiperSlide>
+                <SwiperSlide>DSADAS</SwiperSlide>
+            </Swiper> */}
         </div>
     );
 };
