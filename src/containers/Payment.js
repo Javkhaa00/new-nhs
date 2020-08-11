@@ -19,6 +19,7 @@ export const Payment = () => {
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
+                    <div className="payment--button-middle">Бүртгүүлэх</div>
                 </div>
                 <div className="payment--box--high">
                     <div style={{ paddingTop: "10%" }}>
@@ -30,6 +31,7 @@ export const Payment = () => {
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
+                    <div className="payment--button-high">Бүртгүүлэх</div>
                 </div>
             </div>
         </div>
