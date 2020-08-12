@@ -10,7 +10,7 @@ export const Payment = () => {
             </div>
             <div className="payment--box">
                 <div className="payment--box--middle">
-                    <div style={{paddingTop: "10%"}}>
+                    <div style={{ paddingTop: "10%" }}>
                         <img alt=" " src="/assets/vector-middle.png" />
                     </div>
                     <div className="which-year">дунд анги</div>
@@ -19,7 +19,13 @@ export const Payment = () => {
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
-                    <div className="payment--button-middle">Бүртгүүлэх</div>
+                    <a
+                        className="payment--button-middle"
+                        href="https://nhs.mn/"
+                        target="_blank"
+                    >
+                        Бүртгүүлэх
+                    </a>
                 </div>
                 <div className="payment--box--high">
                     <div style={{ paddingTop: "10%" }}>
@@ -31,7 +37,13 @@ export const Payment = () => {
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
                     <div className="plain-text">Contrary to popular belief</div>
-                    <div className="payment--button-high">Бүртгүүлэх</div>
+                    <a
+                        className="payment--button-high"
+                        href="https://nhs.mn/"
+                        target="_blank"
+                    >
+                        Бүртгүүлэх
+                    </a>
                 </div>
             </div>
         </div>

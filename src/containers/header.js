@@ -18,9 +18,13 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="header--nav--sign-up">
-                    <div className="header--nav--sign-up--button" href="#">
+                    <a
+                        className="header--nav--sign-up--button"
+                        href="https://nhs.mn/"
+                        target="_blank"
+                    >
                         Бүртгүүлэх
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

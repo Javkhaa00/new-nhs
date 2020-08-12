@@ -65,7 +65,13 @@ const Signup = () => {
                     <div className="text">Сек</div>
                 </div>
             </div>
-            <div className="sign-up--button">Бүртгүүлэх</div>
+            <a
+                className="sign-up--button"
+                href="https://nhs.mn/"
+                target="_blank"
+            >
+                Бүртгүүлэх
+                    </a>
         </div>
     );
 };
