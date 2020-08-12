@@ -1,4 +1,5 @@
 import React from "react";
+import { NewsCards } from "../components/NewsCards";
 
 export const Events = () => {
     return (
@@ -12,37 +13,14 @@ export const Events = () => {
                     <div className="events--wrapper--every--button">Бүх мэдээ </div>
                 </div>
             </div>
-            <div className="events--all-cards">
-                <div className="card">
-                    <div className="card--img1">
-
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card--img1">
-
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card--img1">
-
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card--img1">
-
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card--img1">
-
-                    </div>
-                </div>
-                <div className="card">
-                    <div className="card--img1">
-
-                    </div>
-                </div>
+            <div className="all-cards">
+                <NewsCards /> 
+                {/* <div>DAWD</div>
+                <div>DAWD</div>
+                <div>DAWD</div>
+                <div>DAWD</div>
+                <div>DAWD</div>
+                <div>DAWD</div> */}
             </div>
         </div>
     )
