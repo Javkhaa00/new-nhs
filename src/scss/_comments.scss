@@ -1,6 +1,14 @@
-.comments {
-  height: 45vh;
+.comments-wrapper {
+  height: 50vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments {
+  height: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,26 +16,26 @@
   &--row {
     display: flex;
     flex-direction: row;
-    height: 32%;
+    height: 40%;
     width: 80%;
     padding-bottom: 5%;
     // justify-content: center;
     align-items: center;
   }
   &--card {
-    height: 70%;
-    width: 27%;
+    height: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 2%;
-    margin: 20px;
+    // margin: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 24px;
     &--img {
-      height: 100%;
+      height: 90%;
       width: 23%;
       padding-right: 5%;
       img {
@@ -76,10 +84,15 @@
   }
 }
 
-// .swiper-container {
-//     height: 100%;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next {
+  color: #2c2c2c !important;
+}
+.swiper-button-prev {
+  color: #2c2c2c !important;
+}
