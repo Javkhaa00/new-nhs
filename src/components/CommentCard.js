@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CommentCard = (props) => {
     const { el } = props
-
-    console.log(props);
+    console.log(el);
+    if(!el) return null; 
 
     return (
         <div className="comments--card">
@@ -22,26 +22,3 @@ export const CommentCard = (props) => {
 };
 
 export default CommentCard;
-
-// import React from 'react';
-
-// export const TeacherCards = (props) => {
-
-//     const { el } = props
-
-//     return (
-//         <div>
-//             <div className="teachers-card">
-//                 <div className="teachers-card--img">
-//                     <img alt=" " src={el.imgUrl} />
-//                 </div>
-//                 <div className="teachers-card--name">{el.name}</div>
-//                 <div className="teachers-card--name--last">{el.lastName}</div>
-//                 <div className="teachers-card--text">{el.text}</div>
-//                 <ul className="teachers-card--more">
-//                     <li><a href="#">Дэлгэрэнгүй</a></li>
-//                 </ul>
-//             </div>
-//         </div>
-//     )
-// }
