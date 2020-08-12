@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CommentCard = (props) => {
     const { el } = props
-    console.log(el);
-    if(!el) return null; 
+
+    if (!el) return null;
 
     return (
         <div className="comments--card">
