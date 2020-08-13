@@ -15,12 +15,6 @@ export const Events = () => {
             </div>
             <div className="all-cards">
                 <NewsCards /> 
-                {/* <div>DAWD</div>
-                <div>DAWD</div>
-                <div>DAWD</div>
-                <div>DAWD</div>
-                <div>DAWD</div>
-                <div>DAWD</div> */}
             </div>
         </div>
     )
