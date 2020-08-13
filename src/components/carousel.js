@@ -1,7 +1,33 @@
 import React, { useState } from 'react';
+import Teachers from '../json/teachers.json';
 import ItemsCarousel from 'react-items-carousel';
 
 export default () => {
+
+    const renderTeacherCards = (el) => {
+
+        if (!el) return null;
+
+        const backgroundType = el.color;
+
+        return (
+            <div
+                className="teachers--card"
+                style={{
+                    backgroundImage: `url(${el.imgUrl})`,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover'
+                }}
+            >
+                <div className={`teachers--card--type ${backgroundType}`}>
+                    {el.type}
+                </div>
+                <div className="teachers--card--first-name">{el.firstName}</div>
+                <div className="teachers--card--last-name">{el.lastName}</div>
+            </div >
+        )
+    }
+
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     return (
         <div style={{ padding: `0 ${40}px` }}>
@@ -17,13 +43,7 @@ export default () => {
                 outsideChevron={true}
                 chevronWidth={40}
             >
-                <div style={{ height: 200, background: '#EEE' }}>First card</div>
-                <div style={{ height: 200, background: '#EEE' }}>Second card</div>
-                <div style={{ height: 200, background: '#EEE' }}>Third card</div>
-                <div style={{ height: 200, background: '#EEE' }}>Fourth card</div>
-                <div style={{ height: 200, background: '#EEE' }}>Fifth card</div>
-                <div style={{ height: 200, background: '#EEE' }}>Sixth card</div>
-                <div style={{ height: 200, background: '#EEE' }}>Seventh card</div>
+                {Teachers.map(renderTeacherCards)}
             </ItemsCarousel>
         </div>
     );

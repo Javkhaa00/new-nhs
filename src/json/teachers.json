@@ -1,0 +1,82 @@
+[
+  {
+    "_id": 1,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Төлөөлөн удирдах зөвлөл",
+    "color": "type green",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 2,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Мэдээлэл технологийн багш",
+    "color": "type blue",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 3,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Төлөөлөн удирдах зөвлөл",
+    "color": "type green",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 4,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Төлөөлөн удирдах зөвлөл",
+    "color": "type green",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 5,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Ерөнхий боловсролын багш",
+    "color": "type purple",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 6,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Мэдээлэл технологийн багш",
+    "color": "type blue",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 7,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Ерөнхий боловсролын багш",
+    "color": "type purple",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 8,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Төлөөлөн удирдах зөвлөл",
+    "color": "type green",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 9,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Ерөнхий боловсролын багш",
+    "color": "type purple",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  },
+  {
+    "_id": 10,
+    "imgUrl": "/assets/portraits/bek.jpg",
+    "type": "Мэдээлэл технологийн багш",
+    "color": "type blue",
+    "firstName": "Бауырбек",
+    "lastName": "Салдатхан"
+  }
+]
