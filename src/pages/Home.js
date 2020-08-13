@@ -9,6 +9,7 @@ import Comments from '../containers/Comments';
 import Signup from '../containers/Signup';
 import Payment from '../containers/Payment';
 import Thousand from '../containers/Thousand';
+import Teachers from '../containers/Teachers';
 
 export const Home = () => {
     return (
@@ -17,6 +18,7 @@ export const Home = () => {
             <Header />
             <Thousand />
             <Currics />
+            <Teachers />
             <Students />
             <Comments />
             <Signup />
