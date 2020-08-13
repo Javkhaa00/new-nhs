@@ -1,7 +1,6 @@
 import React from 'react'
 
-export const NewsCard = (props) => {
-    const { el } = props
+export const NewsCard = (el) => {
 
     if (!el) return null;
 
