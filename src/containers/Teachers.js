@@ -14,6 +14,12 @@ export const Teachers = () => {
                     Жигүүртэн шувууд лугаа адил эрх чөлөөтэй нисэж, тэнгэрийг эзэгнэх чухам тэр чин хүсэл эрмэлзэл биднийг гэнэхэн мөрөөдөгчдөөс дэлхийг.
                 </div>
             </div>
+            <div className="teachers--wrapper">
+                <div className="teachers--cards"></div>
+                <div className="teachers--cards"></div>
+                <div className="teachers--cards"></div>
+                <div className="teachers--cards"></div>
+            </div>
         </div>
     )
 }

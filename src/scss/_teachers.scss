@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   &--header {
     width: 100%;
     display: flex;
@@ -39,4 +40,19 @@
       opacity: 0.75;
     }
   }
+  &--wrapper {
+    height: 100%;
+    background-color: aqua;
+    position: relative;
+  }
+  &--cards {
+    position: absolute;
+    width: 500px;
+    height: 440px;
+    margin: 1px;
+    background-color: black;
+  }
 }
+
+
+
