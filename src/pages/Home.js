@@ -18,7 +18,7 @@ export const Home = () => {
             <Header />
             <Thousand />
             <Currics />
-            {/* <Teachers /> */}
+            <Teachers />
             <Students />
             <Comments />
             <Signup />

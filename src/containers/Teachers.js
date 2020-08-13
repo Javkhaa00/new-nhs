@@ -1,9 +1,13 @@
 import React from "react";
+import Carousel from "../components/carousel";
 
 export const Teachers = () => {
     return (
         <div className="teachers">
-            <div className="teachers--header">
+            <div style={{ backgroundColor: 'aqua' }}>
+                <Carousel items={[1, 2, 3]} active={1} />
+            </div>
+            {/* <div className="teachers--header">
                 <div className="teachers--header--where">
                     Багш нар
                 </div>
@@ -19,7 +23,7 @@ export const Teachers = () => {
                 <div className="teachers--cards"></div>
                 <div className="teachers--cards"></div>
                 <div className="teachers--cards"></div>
-            </div>
+            </div> */}
         </div>
     )
 }
