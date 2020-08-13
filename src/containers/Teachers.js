@@ -4,10 +4,7 @@ import Carousel from "../components/carousel";
 export const Teachers = () => {
     return (
         <div className="teachers">
-            <div style={{ backgroundColor: 'aqua' }}>
-                <Carousel items={[1, 2, 3]} active={1} />
-            </div>
-            {/* <div className="teachers--header">
+            <div className="teachers--header">
                 <div className="teachers--header--where">
                     Багш нар
                 </div>
@@ -19,11 +16,11 @@ export const Teachers = () => {
                 </div>
             </div>
             <div className="teachers--wrapper">
-                <div className="teachers--cards"></div>
-                <div className="teachers--cards"></div>
-                <div className="teachers--cards"></div>
-                <div className="teachers--cards"></div>
-            </div> */}
+                <Carousel />
+                {/* <div style={{ backgroundColor: 'aqua' }}>
+                    <Carousel items={[1, 2, 3, 4, 5, 6, 7, 8, 9]} active={1} />
+                </div> */}
+            </div>
         </div>
     )
 }

@@ -6,7 +6,11 @@ export const NewsCard = (props) => {
 
     if (!el) return null;
 
-    console.log(el)
+    let tagClass = " ";
+
+    if(el.type === "Арга хэмжээ") {
+        tagClass = "green";
+    }
 
     return (
         <div className="all-cards--card"
@@ -18,7 +22,7 @@ export const NewsCard = (props) => {
         >
             <div className="all-cards--card">
                 <div className="all-cards--card--wrapper">
-                    <div className="all-cards--card--type">
+                    <div className={`all-cards--card--type ${tagClass}`}>
                         {el.type}
                     </div>
                     <div className="all-cards--card--title">
