@@ -118,3 +118,9 @@
 .green {
   background-color: #00B086;
 }
+
+@include respond-above(xs) {
+  .all-cards {
+    visibility: hidden;
+  }
+}

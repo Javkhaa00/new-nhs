@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   &--header {
+    padding-top: 5%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -43,14 +44,15 @@
   }
   &--wrapper {
     height: 100%;
-    padding-top: 5%;
+    padding-top: 2%;
   }
   &--card {
     position: relative;
-    height: 380px;
-    width: 320px;
+    padding-top: 80%;
+    width: 90%;
     border-radius: 24px;
     display: flex;
+    margin: auto;
     flex-direction: column;
     justify-content: flex-end;
     &--first-name {
@@ -83,7 +85,7 @@
 .type {
   display: flex;
   align-items: center;
-  height: 8%;
+  padding: 2%;  
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   width: 65%;

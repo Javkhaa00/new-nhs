@@ -11,6 +11,7 @@ export const Students = () => {
     const [activeIndex, setActive] = useState(0);
     
     const renderCard = (card, index) => {
+        console.log(card);
         const diff = Math.abs(activeIndex - index);
         let scale = diff * 10;
         if (activeIndex === 0) {
@@ -27,9 +28,12 @@ export const Students = () => {
             }
         }
         scale = 100 - scale;
-
+        let className = "";
+        if(scale === 80){
+            className = "firsta";
+        }
         return (
-            <SwiperSlide>
+            <SwiperSlide className={`${className}`}>
                 <div
                     style={{
                         width: `${scale}%`,
@@ -44,7 +48,35 @@ export const Students = () => {
     }
 
     const handleSlide = (swiper) => {
-        console.log(swiper);
+        return false;
+        setTimeout(()=>{
+            if (document.querySelector(".firsta")) {
+                document.querySelector(".firsta").classList.remove("firsta");
+            }
+            if (document.querySelector(".lasta")) {
+                document.querySelector(".lasta").classList.remove("lasta");
+            }
+            let eles = document.querySelectorAll(".swiper-slide");
+            let previndex = 0;
+            let nextindex = 0;
+            let i = 0;
+            let per;
+            while (eles.length > i) {
+                per = eles[i];
+                if (per.classList.contains("swiper-slide-prev")) {
+                    previndex = i;
+                }
+                if (per.classList.contains("swiper-slide-next")) {
+                    nextindex = i;
+                }
+                i++;
+            }
+            if (!(previndex === 0 && nextindex === 0)) {
+                console.log(eles[previndex - 1], eles[previndex + 1]);
+                eles[previndex - 1].classList.add("firsta");
+                eles[nextindex + 1].classList.add("lasta");
+            }
+        },1)
         setActive(swiper.realIndex);
     }
     const test = (swiper, event) => {
@@ -62,7 +94,7 @@ export const Students = () => {
             <Swiper
                 loop={true}
                 navigation
-                pagination
+                // pagination
                 spaceBetween={10}
                 slidesPerView={4}
                 centeredSlides
