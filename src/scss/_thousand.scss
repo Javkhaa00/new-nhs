@@ -13,7 +13,7 @@
     font-family: Open Sans;
     text-align: center;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
@@ -39,5 +39,28 @@
     text-align: center;
     color: #000000;
     opacity: 0.5;
+  }
+}
+
+@include respond-above(xs) {
+  .thousand {
+    background-image: url("/assets/world-phone.png");
+    background-size: 110vh;
+    padding-top: 25%;
+    background-position: top;
+    &--where {
+      // margin-top: 5%;
+      font-size: 12px;
+      line-height: 12px;
+    }
+    &--title {
+      font-size: 24px;
+      line-height: 48px;
+    }
+    &--desc {
+      width: 90%;
+      font-size: 12px;
+      line-height: 12px;
+    }
   }
 }

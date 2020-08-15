@@ -10,7 +10,7 @@ export const Payment = () => {
             </div>
             <div className="payment--box">
                 <div className="payment--box--middle">
-                    <div style={{ paddingTop: "10%" }}>
+                    <div className="payment--img" style={{ marginTop: "60px" }}>
                         <img alt=" " src="/assets/vector-middle.png" />
                     </div>
                     <div className="which-year">дунд анги</div>
@@ -28,7 +28,7 @@ export const Payment = () => {
                     </a>
                 </div>
                 <div className="payment--box--high">
-                    <div style={{ paddingTop: "10%" }}>
+                    <div style={{ paddingTop: "60px" }}>
                         <img alt=" " src="/assets/vector-high.png" />
                     </div>
                     <div className="which-year">ахлах анги</div>

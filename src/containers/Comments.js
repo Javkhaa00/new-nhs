@@ -39,7 +39,6 @@ export const Comments = () => {
                 numberOfCards={3}
                 leftChevron={<div className="arrow left"></div>}
                 rightChevron={<div className="arrow right"></div>}
-                outsideChevron={true}
                 chevronWidth={chevronWidth}
             >
                 {comments.map(renderCards)}
