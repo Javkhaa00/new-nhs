@@ -31,7 +31,9 @@
     color: #ffffff;
   }
   &--counter {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
     font-family: Montserrat;
     font-style: normal;
@@ -41,6 +43,9 @@
     line-height: 50px;
     text-align: center;
     color: #f9cd0c;
+    &--text {
+      
+    }
   }
   &--button {
     font-family: Montserrat;
@@ -71,4 +76,42 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
+
+@include respond-above(xs) {
+  .sign-up {
+    &--date {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 29px;
+    }
+    &--title {
+      width: 80%;
+      font-size: 24px;
+      line-height: 49px;
+    }
+    &--counter {
+      display: flex;
+      flex-direction: row;
+      font-family: Montserrat;
+      padding-top: 10px;
+      font-size: 24px;
+      &--text {
+        width: 25%;
+      }
+    }
+    &--button {
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      display: inline;
+      padding: 8px 24px 8px 24px;
+    }
+  }
+
+  .text {
+    font-size: 12px;
+    padding: 0px 28px 20px 28px;
+    line-height: 20px;
+  }
 }

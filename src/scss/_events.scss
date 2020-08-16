@@ -2,11 +2,20 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  &--where {
+    width: 80%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3ec1cd;
+  }
   &--title {
     width: 80%;
-    margin-top: 5%;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 36px;
@@ -14,12 +23,12 @@
     color: #765ca6;
   }
   &--wrapper {
-    height: 5%;
     width: 100%;
     display: flex;
     padding-top: 10px;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     &--desc {
       font-family: Source Sans Pro;
       word-spacing: 0.5px;
@@ -80,7 +89,7 @@
       justify-content: center;
       width: 95px;
       height: 33px;
-      border-radius: 12px;
+      border-radius: 8px;
       background-color: #765ca6;
       font-family: Montserrat;
       font-weight: 400;
@@ -89,7 +98,6 @@
     }
     &--title {
       width: 80%;
-      height: 30%;
       padding-top: 4%;
       font-family: Montserrat;
       font-style: normal;
@@ -116,11 +124,63 @@
 }
 
 .green {
-  background-color: #00B086;
+  background-color: #00b086;
 }
 
 @include respond-above(xs) {
+  .events {
+    height: unset;
+    &--where {
+      width: 90%;
+    }
+    &--title {
+      width: 90%;
+      font-size: 24px;
+    }
+    &--wrapper {
+      width: 90%;
+      &--desc {
+        width: 100%;
+        line-height: 12px;
+      }
+      &--every {
+        width: 0;
+        &--button {
+          font-size: 12px;
+          visibility: hidden;
+        }
+      }
+    }
+  }
   .all-cards {
-    visibility: hidden;
+    padding-top: 10px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 28px;
+    &--card {
+      margin-bottom: 10px;
+      padding-top: 100px;
+      &--type {
+        font-weight: 400;
+        font-size: 12px;
+      }
+      &--title {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 16px;
+      }
+      &--date {
+        font-weight: 400;
+        font-size: 12px;
+      }
+      &--wrapper {
+        margin-bottom: 12px;
+        width: 100%;
+        margin-left: 28px;
+      }
+    }
   }
 }

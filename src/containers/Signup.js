@@ -48,19 +48,19 @@ const Signup = () => {
             <div className="sign-up--date">9-р сарын 10</div>
             <div className="sign-up--title">Бүртгэл дуусах хугацаа</div>
             <div className='sign-up--counter'>
-                <div>
+                <div className="sign-up--counter--texts">
                     <div >{state.days || '0'}</div>
                     <div className="text">Өдөр</div>
                 </div>
-                <div>
+                <div className="sign-up--counter--texts">
                     <div >{state.hours || '00'}</div>
                     <div className="text">Цаг</div>
                 </div>
-                <div>
+                <div className="sign-up--counter--texts">
                     <div >{state.minutes || '00'}</div>
                     <div className="text">Мин</div>
                 </div>
-                <div>
+                <div className="sign-up--counter--texts">
                     <div >{state.seconds || '00'}</div>
                     <div className="text">Сек</div>
                 </div>

@@ -4,6 +4,7 @@ import { NewsCards } from "../components/NewsCards";
 export const Events = () => {
     return (
         <div className="events" id="events-section">
+            <div className="events--where">Мэдээ</div>
             <div className="events--title">Нэстээр сонин сайхан</div>
             <div className="events--wrapper">
                 <div className="events--wrapper--desc">
@@ -14,7 +15,7 @@ export const Events = () => {
                 </div>
             </div>
             <div className="all-cards">
-                {/* <NewsCards />  */}
+                <NewsCards /> 
             </div>
         </div>
     )
