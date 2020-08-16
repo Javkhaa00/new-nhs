@@ -3,6 +3,9 @@ import News from "../json/news.json";
 import { NewsCard } from "./NewsCard";
 
 export const NewsCards = (props) => {
+
+    const widt = window.innerWidth;
+    
     return (
         <>
             {
