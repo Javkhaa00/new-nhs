@@ -1,14 +1,13 @@
 .students {
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   display: flex;
-  background-image: url('/assets/students-back.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
+  background-color: rgba(0,0,0, 0.05);
   flex-direction: column;
   align-items: center;
   &--where {
-    padding-top: 7%;
+    padding-top: 5%;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -37,32 +36,27 @@
     line-height: 24px;
     text-align: center;
     color: #000000;
-    opacity: 0.75;
+    opacity: 0.5;
     padding-bottom: 3%;
   }
 }
 
-// .swiper-container {
-//   height: 50%;
-//   width: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// .swiper-slide[index] {
-//   justify-content: left;
-// }
-// .firsta{
-//   justify-content: flex-end !important;
-//   background-color: black !important;
-// }
-// .lasta{
-//   justify-content: flex-start !important;
-// }
-
 @include respond-above(xs) {
   .students {
-    // display: none;
+    &--where {
+      padding-top: 80px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    &--title {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    &--desc {
+      width: 80%;
+      font-weight: 400;
+      font-size: 14px;
+    }
   }
 }
