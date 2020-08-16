@@ -42,24 +42,24 @@
   }
 }
 
-.swiper-container {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .swiper-container {
+//   height: 50%;
+//   width: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.swiper-slide[index] {
-  justify-content: left;
-}
-.firsta{
-  justify-content: flex-end !important;
-  background-color: black !important;
-}
-.lasta{
-  justify-content: flex-start !important;
-}
+// .swiper-slide[index] {
+//   justify-content: left;
+// }
+// .firsta{
+//   justify-content: flex-end !important;
+//   background-color: black !important;
+// }
+// .lasta{
+//   justify-content: flex-start !important;
+// }
 
 @include respond-above(xs) {
   .students {

@@ -29,7 +29,7 @@ export const Comments = () => {
     }
 
     return (
-        <div style={{ padding: `1 ${chevronWidth}px` }}>
+        <div id="comments-section" style={{ padding: `1 ${chevronWidth}px` }}>
             <ItemsCarousel
                 disableSwipe={false}
                 infiniteLoop={true}

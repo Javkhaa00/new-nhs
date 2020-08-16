@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Payment = () => {
     return (
-        <div className="payment">
+        <div className="payment" id="payment-section">
             <div className="payment--class">Төлбөр</div>
             <div className="payment--title">Төлбөрийн мэдээлэл</div>
             <div className="payment--desc">

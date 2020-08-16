@@ -63,21 +63,21 @@ ul {
   display: flex;
 }
 
-span {
+#buttons {
   color: white;
   position: relative;
   display: block;
   margin: 0 21px;
 }
-span:hover {
+#buttons:hover {
   color: $white;
 }
-span:focus,
-span:active {
+#buttons:focus,
+#buttons:active {
   color: $white;
 }
 
-span::before {
+#buttons::before {
   content: "";
   display: block;
   position: absolute;
@@ -90,12 +90,12 @@ span::before {
   transition: color 0.1s, transform 0.2s ease-out;
 }
 
-span:active::before {
+#buttons:active::before {
   background-color: $white;
 }
 
-span:hover::before,
-span:focus::before {
+#buttons:hover::before,
+#buttons:focus::before {
   transform-origin: center top;
   transform: scale(1, 1);
 }

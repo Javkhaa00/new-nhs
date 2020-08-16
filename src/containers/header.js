@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     return (
@@ -9,12 +10,88 @@ const Header = () => {
                 </div>
                 <div className="header--nav--buttons">
                     <ul>
-                        <li><span className="header--texts" href="#">Нүүр</span></li>
-                        <li><span className="header--texts" href="#">Бидний тухай</span></li>
-                        <li><span className="header--texts" href="#">Хөтөлбөр</span></li>
-                        <li><span className="header--texts" href="#">Багш нар</span></li>
-                        <li><span className="header--texts" href="#">Мэдээ</span></li>
-                        <li><span className="header--texts" href="#">Холбоо барих</span></li>
+                        <li>
+                            <Link
+                                to="firstpage-section"
+                                id="buttons"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                                className="header--texts" >
+                                Нүүр
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="header--texts"
+                                activeClass="active"
+                                to="thousand-section"
+                                id="buttons"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Бидний тухай
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="header--texts"
+                                activeClass="active"
+                                to="currics-section"
+                                id="buttons"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Хөтөлбөр
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="header--texts"
+                                activeClass="active"
+                                to="teachers-section"
+                                id="buttons"
+                                spy={true}
+                                smooth={true}
+                                offset={-50}
+                                duration={500}
+                            >
+                                Багш нар
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="header--texts"
+                                activeClass="active"
+                                to="events-section"
+                                id="buttons"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Мэдээ
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className="header--texts"
+                                activeClass="active"
+                                to="contacts-section"
+                                id="buttons"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            >
+                                Холбоо барих
+                            </Link>
+                        </li>
                     </ul>
                 </div>
                 <div className="header--nav--sign-up">

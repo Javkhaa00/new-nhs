@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Contact = () => {
     return (
-        <div className="contacts">
+        <div className="contacts" id="contacts-section">
             <div className="contacts--header">
                 <div className="triangle1" />
                 <div className="triangle2" />

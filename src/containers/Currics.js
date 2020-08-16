@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Currics = () => {
     return (
-        <div className="currics">
+        <div className="currics" id="currics-section">
             <div className="currics--text-container--where">Хөтөлбөр</div>
             <div className="currics--text-container">
                 <div className="currics--text-container--title">

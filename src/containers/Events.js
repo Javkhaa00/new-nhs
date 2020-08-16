@@ -3,7 +3,7 @@ import { NewsCards } from "../components/NewsCards";
 
 export const Events = () => {
     return (
-        <div className="events">
+        <div className="events" id="events-section">
             <div className="events--title">Нэстээр сонин сайхан</div>
             <div className="events--wrapper">
                 <div className="events--wrapper--desc">

@@ -3,7 +3,7 @@ import React from 'react'
 
 const FirstPage = () => {
     return (
-        <div className="first-page">
+        <div className="first-page" id="firstpage-section">
             <div className="layer">
                 <ul className="first-page--text-container">
                     <li className="first-page--text"> АНУ-аас Монгол Улсад суугаа онц бөгөөд бүрэн эр...</li>

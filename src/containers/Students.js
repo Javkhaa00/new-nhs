@@ -85,7 +85,7 @@ export const Students = () => {
     }
 
     return (
-        <div className="students">
+        <div className="students" id="students-section">
             <div className="students--where">Сурагчид</div>
             <div className="students--title">Сурагчдын амжилт</div>
             <div className="students--desc">

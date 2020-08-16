@@ -44,7 +44,7 @@ const Signup = () => {
     };
 
     return (
-        <div className="sign-up">
+        <div className="sign-up" id="signup-section">
             <div className="sign-up--date">9-р сарын 10</div>
             <div className="sign-up--title">Бүртгэл дуусах хугацаа</div>
             <div className='sign-up--counter'>

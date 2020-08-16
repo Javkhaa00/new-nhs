@@ -3,7 +3,7 @@ import Carousel from "../components/carousel";
 
 export const Teachers = () => {
     return (
-        <div className="teachers">
+        <div className="teachers" id="teachers-section">
             <div className="teachers--header">
                 <div className="teachers--header--where">
                     Багш нар
