@@ -8,12 +8,16 @@ export const NewsCard = (props) => {
 
     let tagClass = " ";
 
-    if(el.type === "Арга хэмжээ") {
+    if (el.type === "Арга хэмжээ") {
         tagClass = "green";
     }
 
     return (
-        <div className="all-cards--card"
+        <div
+            onClick={() => {
+                window.location = "/news/" + props.el._id;
+            }}
+            className="all-cards--card"
             style={{
                 backgroundImage: `url(${el.imgUrl})`,
                 backgroundRepeat: 'no-repeat',

@@ -15,7 +15,10 @@ export const Events = () => {
                 </div>
             </div>
             <div className="all-cards">
-                <NewsCards /> 
+                <NewsCards />
+            </div>
+            <div className="events--wrapper--every1">
+                <div className="events--wrapper--every1--button-phone">Бүх мэдээ </div>
             </div>
         </div>
     )

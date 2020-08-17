@@ -39,6 +39,28 @@
       width: 50%;
       display: flex;
     }
+    &--every1 {
+      &--button-phone {
+        visibility: hidden;
+        height: 30px;
+        width: 100px;
+        margin-right: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 12px;
+        color: #765ca6;
+        border: 1px solid #765ca6;
+        transition: 0.3s;
+        border-radius: 8px;
+      }
+      &--button-phone:hover {
+        background-color: #765ca6;
+        color: $white;
+      }
+    }
     &--every {
       width: 30%;
       display: flex;
@@ -143,11 +165,17 @@
         width: 100%;
         line-height: 12px;
       }
+      &--every1 {
+        &--button-phone {
+          visibility: visible;
+          margin-bottom: 28px;
+        }
+      }
       &--every {
         width: 0;
         &--button {
           font-size: 12px;
-          visibility: hidden;
+          // visibility: hidden;
         }
       }
     }
@@ -159,7 +187,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 28px;
     &--card {
       margin-bottom: 10px;
       padding-top: 100px;

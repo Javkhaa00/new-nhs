@@ -1,12 +1,11 @@
 import React from 'react'
-import Header from '../containers/Header';
-import { EveryNewsCards } from '../components/EveryNewsCards';
+import { NewsCards } from '../components/NewsCards';
 
-export const NewsDetail = () => {
+export const NewsDetail = (props) => {
+    console.log(props.match.params);
     return (
         <div className="news-detail">
-            <Header />
-            <EveryNewsCards />
+            <NewsCards />
         </div>  
     )
 };

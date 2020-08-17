@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.scss';
 import Home from './pages/Home';
+import Header from './containers/Header';
 import NewsDetail from './pages/NewsDetail';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,12 +12,15 @@ import {
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route path="/news" component={NewsDetail} />
-        <Route path="/" component={Home} />
-      </Switch>
-    </Router>
+    <div>
+      <Header />
+      <Router>
+        <Switch>
+          <Route path="/news/:newsId" exact={true} component={NewsDetail} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </Router>
+    </div >
   );
 }
 
