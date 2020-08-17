@@ -1,5 +1,5 @@
-import React from 'react'
-// import Header from '../containers/Header'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const FirstPage = () => {
     return (
@@ -10,7 +10,7 @@ const FirstPage = () => {
                     <li className="first-page--text1">
                         Өнөөдөр болж буй үйл явдал боловсролын салбарт төдийгүй Монголын ирээдүйд хийж буй том хөрөнгө оруулалт. Энэ чиглэлээр гүнзгийрүүлж сурахаар зорьсон сурагчид, эцэг эхээр нь бахархаж байна.
                     </li>
-                    <li><div className="first-page--more">Дэлгэрэнгүй </div></li>
+                    <li><Link to="/news" className="first-page--more">Дэлгэрэнгүй</Link></li>
                 </ul>
                 <div className="white" />
                 <div className="gray" />

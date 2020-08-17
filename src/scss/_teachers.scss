@@ -1,11 +1,11 @@
 .teachers {
-  height: 100vh;
+  height: 90vh;
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   &--header {
-    padding-top: 5%;
+    padding-top: 34px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
 .type {
   display: flex;
   align-items: center;
-  padding: 2%;  
+  padding: 2%;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   width: 65%;
@@ -107,4 +107,47 @@
 }
 .blue {
   background-color: #3ec1cd;
+}
+
+@include respond-above(xs) {
+  .teachers {
+    &--header {
+      padding-top: 64px;
+      &--where {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      &--title {
+        font-weight: 800;
+        font-size: 24px;
+      }
+      &--desc {
+        width: 80%;
+        font-weight: 400;
+        font-size: 14px;
+      }
+    }
+    &--wrapper {
+      padding-top: 0;
+    }
+    &--card {
+      margin-top: 38px;
+      padding-top: 300px;
+      &--first-name {
+        font-weight: 600;
+        font-size: 24px;
+      }
+      &--last-name {
+        font-weight: 200;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .type {
+    padding: 2%;
+    width: 65%;
+    font-weight: 400;
+    font-size: 11px;
+  }
 }

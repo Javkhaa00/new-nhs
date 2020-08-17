@@ -1,62 +1,96 @@
 .students {
-  height: 100vh;
+  height: 105vh;
+  position: relative;
   width: 100%;
-  display: flex;
   clip-path: polygon(0 14%, 100% 0%, 100% 86%, 0% 100%);
-  background-color: rgba(0,0,0, 0.05);
+  background-color: rgba(0, 0, 0, 0.05);
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  &--where {
+  &--header {
     padding-top: 5%;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #3ec1cd;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &--where {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #3ec1cd;
+    }
+    &--title {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 49px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #765ca6;
+    }
+    &--desc {
+      width: 40%;
+      font-family: Source Sans Pro;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: #212121;
+      opacity: 0.75;
+    }
   }
-  &--title {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 38px;
-    line-height: 59px;
-    text-align: center;
-    text-transform: uppercase;
-    font-feature-settings: "kern" off;
-    color: #765ca6;
+  &--wrapper {
+    padding-top: 2%;
   }
-  &--desc {
-    width: 50%;
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    color: #000000;
-    opacity: 0.5;
-    padding-bottom: 3%;
+  &--card {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding-top: 420px;
+    width: 90%;
+    border-radius: 24px;
   }
 }
 
 @include respond-above(xs) {
   .students {
-    &--where {
-      padding-top: 80px;
-      font-weight: 400;
-      font-size: 14px;
+    &--header {
+      padding-top: 20px;
+      &--where {
+        padding-top: 80px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      &--title {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      &--desc {
+        width: 80%;
+        font-weight: 400;
+        font-size: 14px;
+      }
     }
-    &--title {
-      font-weight: 800;
-      font-size: 24px;
-      line-height: 36px;
-    }
-    &--desc {
-      width: 80%;
-      font-weight: 400;
-      font-size: 14px;
+    &--card {
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+      padding-top: 480px;
+      width: 90%;
+      border-radius: 24px;
     }
   }
+}
+
+@include respond-above(sm) {
 }

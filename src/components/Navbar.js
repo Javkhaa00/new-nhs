@@ -7,9 +7,6 @@ const Nav = styled.nav`
   height: 55px;
   display: flex;
   justify-content: space-between;
-  .logo {
-    padding: 15px 0;
-  }
 `
 
 const Navbar = () => {
@@ -20,9 +17,9 @@ const Navbar = () => {
                     <div className="header--nav--logo">
                         <img className="header--nav--logo--img" alt="nest-logo" src="/assets/logo-colored.png" />
                     </div>
+                    <Burger />
                 </div>
             </div>
-            <Burger />
         </Nav>
     )
 }

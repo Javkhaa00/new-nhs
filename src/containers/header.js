@@ -1,28 +1,17 @@
 import React from 'react';
-import Navbar from '../components/Navbar'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link, animateScroll as scroll} from "react-scroll";
 
 const Header = () => {
     return (
-        <div>
-        
-        </div>
-        // <Navbar />
-    )
-};
-
-export default Header;
-
-// <div className="header">
-
-{/* <div className="header--nav">
+        <div className="header">
+            <div className="header--nav">
                 <div className="header--nav--logo">
                     <img className="header--nav--logo--img" alt="nest-logo" src="/assets/logo-colored.png" />
                 </div>
                 <div className="header--nav--buttons">
                     <ul>
                         <li>
-                            <Link
+                            <Link                                
                                 to="firstpage-section"
                                 id="buttons"
                                 spy={true}
@@ -114,5 +103,9 @@ export default Header;
                         Бүртгүүлэх
                     </a>
                 </div>
-            </div> */}
-        // </div >
+            </div>
+        </div>
+    )
+};
+
+export default Header;

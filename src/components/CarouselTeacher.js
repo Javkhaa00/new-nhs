@@ -1,8 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Teachers from '../json/teachers.json';
 import ItemsCarousel from 'react-items-carousel';
+import useWindowSize from "../hooks/useWindowSize";
 
 export default () => {
+
+    const computeCardsNumber = () => {
+        if (windowSize.width < 570) {
+            return 1;
+        }
+        if (windowSize.width < 800) {
+            return 2;
+        }
+        return 3;
+    }
+
+    const windowSize = useWindowSize();
+    const [cards, setCards] = useState(computeCardsNumber());
+
+    useEffect(() => {
+        setCards(computeCardsNumber());
+    }, [windowSize.width]);
 
     const renderTeacherCards = (el) => {
 
@@ -36,7 +54,7 @@ export default () => {
                 activePosition
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
-                numberOfCards={3}
+                numberOfCards={cards}
                 gutter={20}
                 leftChevron={<div className="arrow left"></div>}
                 rightChevron={<div className="arrow right"></div>}

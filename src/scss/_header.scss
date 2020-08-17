@@ -102,7 +102,6 @@ ul {
 
 @include respond-above(xs) {
   .header {
-    border-bottom: unset;
     &--buttons {
       display: none;
     }

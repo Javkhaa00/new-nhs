@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "../components/carousel";
+import CarouselTeacher from "../components/CarouselTeacher";
 
 export const Teachers = () => {
     return (
@@ -16,7 +16,7 @@ export const Teachers = () => {
                 </div>
             </div>
             <div className="teachers--wrapper">
-                <Carousel />
+                <CarouselTeacher />
                 {/* <div style={{ backgroundColor: 'aqua' }}>
                     <Carousel items={[1, 2, 3, 4, 5, 6, 7, 8, 9]} active={1} />
                 </div> */}

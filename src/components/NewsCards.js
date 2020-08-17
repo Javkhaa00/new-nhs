@@ -4,8 +4,8 @@ import { NewsCard } from "./NewsCard";
 
 export const NewsCards = (props) => {
 
-    const widt = window.innerWidth;
-    
+    const deviceWidth = window.innerWidth;
+
     return (
         <>
             {

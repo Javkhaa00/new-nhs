@@ -6,7 +6,7 @@ const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
-  top: 15px;
+  // top: 15px;
   right: 20px;
   z-index: 10;
   display: none;
@@ -18,20 +18,17 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     z-index: 1;
-    height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    height: 0.20rem;
+    background-color: ${({ open }) => open ? '#FFFFFF' : '#FFFFFF'};
     border-radius: 10px;
-    transform-origin: 1px;
+    // transform-origin: 1px;
     transition: all 0.3s linear;
     &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'translateX(45%)' : 'translateX(0)'};
     }
     &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+      transform: ${({ open }) => open ? 'translateX(45%)' : 'translateX(0)'};
       opacity: ${({ open }) => open ? 0 : 1};
-    }
-    &:nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }
 `;
@@ -42,7 +39,6 @@ const Burger = () => {
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
-        <div />
         <div />
         <div />
       </StyledBurger>

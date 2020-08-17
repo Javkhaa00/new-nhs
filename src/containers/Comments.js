@@ -1,8 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import comments from "../json/comments.json";
 import ItemsCarousel from 'react-items-carousel';
+import useWindowSize from "../hooks/useWindowSize";
 
 export const Comments = () => {
+
+    const computeCardsNumber = () => {
+        if (windowSize.width < 570) {
+            return 1;
+        }
+        if (windowSize.width < 800) {
+            return 2;
+        }
+        return 3;
+    }
+
+    const windowSize = useWindowSize();
+    const [cards, setCards] = useState(computeCardsNumber());
+
+    useEffect(() => {
+        setCards(computeCardsNumber());
+    }, [windowSize.width]);
 
     const [activeItemIndex, setActiveItemIndex] = useState(0);
     const chevronWidth = "5";
@@ -36,7 +54,7 @@ export const Comments = () => {
                 activePosition
                 requestToChangeActive={setActiveItemIndex}
                 activeItemIndex={activeItemIndex}
-                numberOfCards={3}
+                numberOfCards={cards}
                 leftChevron={<div className="arrow left"></div>}
                 rightChevron={<div className="arrow right"></div>}
                 chevronWidth={chevronWidth}
