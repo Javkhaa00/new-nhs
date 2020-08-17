@@ -6,7 +6,14 @@ const Header = () => {
         <div className="header">
             <div className="header--nav">
                 <div className="header--nav--logo">
-                    <img className="header--nav--logo--img" alt="nest-logo" src="/assets/logo.png" />
+                    <img
+                        onClick={() => {
+                            window.location = "/";
+                        }}
+                        className="header--nav--logo--img"
+                        alt="nest-logo"
+                        src="/assets/logo.png"
+                    />
                 </div>
                 <div className="header--nav--buttons">
                     <ul>
