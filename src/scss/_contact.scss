@@ -175,6 +175,7 @@ a.social:hover {
   .contacts {
     height: 110vh;
     &--header {
+      display: none;
     }
     &--main {
       height: 100%;
@@ -197,7 +198,8 @@ a.social:hover {
           }
         }
         &--map {
-          height: 100%;
+          margin-bottom: 10px;
+          height: 70%;
           width: 90%;
         }
       }

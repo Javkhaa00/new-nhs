@@ -149,6 +149,7 @@
 @include respond-above(xs) {
   .payment {
     justify-content: center;
+    margin-bottom: 20px;
     &--img {
       margin-top: 60px;
     }

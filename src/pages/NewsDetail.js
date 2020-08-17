@@ -3,9 +3,8 @@ import Header from '../containers/Header';
 
 export const NewsDetail = () => {
     return (
-        <div>
+        <div className="news-detail">
             <Header />
-            <h1>YAGAAD AJILLAHGUI BGAN BE</h1>
         </div>  
     )
 };

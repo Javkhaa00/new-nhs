@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Home} />
         <Route path="/news" component={NewsDetail} />
+        <Route path="/" component={Home} />
       </Switch>
     </Router>
   );

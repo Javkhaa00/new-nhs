@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, animateScroll as scroll} from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     return (
@@ -11,7 +11,8 @@ const Header = () => {
                 <div className="header--nav--buttons">
                     <ul>
                         <li>
-                            <Link                                
+                            <Link
+                                href="/"
                                 to="firstpage-section"
                                 id="buttons"
                                 spy={true}
