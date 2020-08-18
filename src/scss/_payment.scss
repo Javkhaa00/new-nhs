@@ -1,5 +1,4 @@
 .payment {
-  // height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -28,7 +27,7 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     text-align: center;
     color: #000000;
@@ -41,7 +40,7 @@
     justify-content: center;
     flex-direction: row;
     &--middle {
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -52,7 +51,7 @@
       border-radius: 24px;
     }
     &--high {
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -159,28 +158,26 @@
       line-height: 24px;
     }
     &--title {
-      width: 80%;
+      width: 100%;
       font-size: 16px;
       line-height: 32px;
     }
     &--desc {
-      width: 80%;
-      font-size: 12px;
+      width: 100%;
+      font-size: 14px;
       line-height: 12px;
       padding-bottom: 5%;
     }
     &--box {
-      height: 100%;
       flex-direction: column;
       &--middle {
-        height: 100%;
         width: 100%;
         margin-right: 0;
       }
       &--high {
-        height: 100%;
         width: 100%;
-        margin-top: 5%;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
     &--button-high {

@@ -2,8 +2,14 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  &--shape {
+    width: 100%;
+    height: 240px;
+    background-image: url("/assets/contact-shape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   &--main {
-    height: 85%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,6 +17,7 @@
     border-bottom: 1px solid #765ca6;
     background-color: #765ca6;
     &--container {
+      background-color: #765ca6;
       padding-top: 50px;
       padding-bottom: 50px;
       width: 100%;
@@ -83,18 +90,12 @@
           }
         }
       }
-      &--map {
-        padding-top: 450px;
+      #map {
         width: 40%;
-        border-radius: 50px;
-        background-color: white;
-        background-image: url("/assets/location.png");
-        background-repeat: no-repeat;
-        background-size: cover;
       }
     }
     &--footer {
-      height: 10%;
+      // height: 10%;
       width: 81%;
       margin-top: 10px;
       display: flex;
@@ -147,13 +148,13 @@ a.social:hover {
 @include respond-above(xs) {
   .contacts {
     height: 110vh;
-    &--header {
-      display: none;
+    &--shape {
     }
     &--main {
       height: 100%;
       &--container {
         flex-direction: column;
+        padding-bottom: 0px;
         &--texts {
           height: 60%;
           display: flex;
@@ -170,10 +171,9 @@ a.social:hover {
             margin-left: 50px;
           }
         }
-        &--map {
+        #map {
           margin-bottom: 10px;
-          height: 70%;
-          width: 90%;
+          width: 80%;
         }
       }
     }
@@ -188,4 +188,7 @@ a.social:hover {
   .new-nhs {
     width: 40%;
   }
+}
+
+@include respond-above(xlg) {
 }

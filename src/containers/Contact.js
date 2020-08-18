@@ -1,15 +1,54 @@
 import React from "react";
 import { faInstagram, faYoutube, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
+const MapContainer = () => {
+
+    const locations = [
+        {
+            name: "Nest High School",
+            location: {
+                lat: 47.916793,
+                lng: 106.941557
+            },
+        }
+    ]
+
+    const mapStyles = {
+        height: "450px",
+        width: "100%",
+        borderRadius: "24px"
+    };
+
+    const defaultCenter = {
+        lat: 47.916793, lng: 106.941557
+    }
+
+    return (
+        <LoadScript
+            googleMapsApiKey='AIzaSyBat_96O9dbzRTcP5l3fj1cpyapdU9N7Lo'>
+            <GoogleMap
+                mapContainerStyle={mapStyles}
+                zoom={16}
+                center={defaultCenter}
+            >
+                {
+                    locations.map(item => {
+                        return (
+                            <Marker key={item.name} position={item.location} />
+                        )
+                    })
+                }
+            </ GoogleMap>
+        </LoadScript>
+    );
+};
 
 export const Contact = () => {
     return (
         <div className="contacts" id="contacts-section">
-            <div className="contacts--header">
-                <div className="triangle1" />
-                <div className="triangle2" />
-                <div className="triangle3" />
-            </div>
+            <div className="contacts--shape"></div>
             <div className="contacts--main">
                 <div className="contacts--main--container">
                     <div className="contacts--main--container--texts">
@@ -39,7 +78,9 @@ export const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="contacts--main--container--map"></div>
+                    <div id="map">
+                        {MapContainer()}
+                    </div>
                 </div>
                 <div className="contacts--main--footer">
                     <p className="new-nhs">nhs.edu.mn © 2020</p>
