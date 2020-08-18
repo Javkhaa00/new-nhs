@@ -1,110 +1,110 @@
-// .news-detail {
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   width: 100%;
-//   color: $white;
-//   padding-top: 150px;
-//   &--wrapper {
-//     width: 90%;
-//     margin-left: 80px;
-//     &--where {
-//       width: 90%;
-//       font-family: Open Sans;
-//       font-style: normal;
-//       font-weight: 600;
-//       font-size: 16px;
-//       line-height: 24px;
-//       text-transform: uppercase;
-//       color: #3ec1cd;
-//     }
-//     &--title {
-//       width: 90%;
-//       padding-bottom: 14px;
-//       font-family: Montserrat;
-//       font-style: normal;
-//       font-weight: 800;
-//       font-size: 34px;
-//       line-height: 59px;
-//       text-transform: uppercase;
-//       color: #000000;
-//     }
-//     &--wallpaper {
-//       img {
-//         height: 520px;
-//         width: 80%;
-//       }
-//     }
-//     &--text {
-//       width: 90%;
-//       padding-top: 14px;
-//       font-family: Open Sans;
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 20px;
-//       line-height: 24px;
-//       color: #000000;
-//     }
-//   }
-// }
+.news-detail {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $white;
+  padding-top: 150px;
+  &--wrapper {
+    width: 90%;
+    margin-left: 80px;
+    &--where {
+      width: 90%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #3ec1cd;
+    }
+    &--title {
+      width: 90%;
+      padding-bottom: 14px;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 59px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    &--wallpaper {
+      img {
+        height: 520px;
+        width: 80%;
+      }
+    }
+    &--text {
+      width: 90%;
+      padding-top: 14px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+    }
+  }
+}
 
-// .all-cards {
-//   padding-top: 20px;
-//   height: 520px;
-//   width: 80%;
-//   display: grid;
-//   grid-template-columns: auto auto auto;
-//   &--card:hover {
-//     opacity: 0.9;
-//     transition: 0.2s;
-//     transform: translateY(-2px);
-//   }
-//   &--card {
-//     width: 95%;
-//     display: flex;
-//     justify-content: flex-end;
-//     flex-direction: column;
-//     border-radius: 8px;
-//     &--type {
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
-//       width: 95px;
-//       height: 33px;
-//       border-radius: 8px;
-//       background-color: #765ca6;
-//       font-family: Montserrat;
-//       font-weight: 400;
-//       font-size: 12px;
-//       color: #ffffff;
-//     }
-//     &--title {
-//       width: 80%;
-//       padding-top: 4%;
-//       font-family: Montserrat;
-//       font-style: normal;
-//       font-weight: 500;
-//       font-size: 16px;
-//       line-height: 24px;
-//       text-transform: uppercase;
-//       color: #ffffff;
-//     }
-//     &--date {
-//       font-family: Montserrat;
-//       font-style: normal;
-//       font-weight: 400;
-//       font-size: 12px;
-//       color: #ffffff;
-//       opacity: 0.75;
-//     }
-//     &--wrapper {
-//       height: 50%;
-//       width: 100%;
-//       margin-left: 8%;
-//     }
-//   }
-// }
+.all-cards {
+  padding-top: 20px;
+  height: 520px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  &--card:hover {
+    opacity: 0.9;
+    transition: 0.2s;
+    transform: translateY(-2px);
+  }
+  &--card {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 8px;
+    &--type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 95px;
+      height: 33px;
+      border-radius: 8px;
+      background-color: #765ca6;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 12px;
+      color: #ffffff;
+    }
+    &--title {
+      width: 80%;
+      padding-top: 4%;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    &--date {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      color: #ffffff;
+      opacity: 0.75;
+    }
+    &--wrapper {
+      height: 50%;
+      width: 100%;
+      margin-left: 8%;
+    }
+  }
+}
 
-// @include respond-above(xs) {
+@include respond-above(xs) {
   
-// }
+}

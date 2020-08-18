@@ -19,7 +19,9 @@ const Header = () => {
                     <ul>
                         <li>
                             <Link
-                                href="/"
+                                onClick={() => {
+                                    window.location = "/";
+                                }}
                                 to="firstpage-section"
                                 id="buttons"
                                 spy={true}
