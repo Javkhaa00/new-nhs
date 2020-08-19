@@ -12,9 +12,11 @@ const FirstPage = () => {
                     </li>
                     <li><Link to="/news" className="first-page--more">Дэлгэрэнгүй</Link></li>
                 </ul>
-                <div className="white" />
-                <div className="gray" />
-                <div className="gray-layer" />
+            </div>
+            <div className="first-page--layers">
+                <div className="first-page--layers--white" />
+                <div className="first-page--layers--gray" />
+                <div className="first-page--layers--gray-layer" />
             </div>
         </div>
     )

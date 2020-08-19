@@ -1,7 +1,7 @@
 [
   {
     "_id": 1,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Төлөөлөн удирдах зөвлөл",
     "color": "type green",
     "firstName": "Бауырбек",
@@ -9,7 +9,7 @@
   },
   {
     "_id": 2,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Мэдээлэл технологийн багш",
     "color": "type blue",
     "firstName": "Бауырбек",
@@ -17,7 +17,7 @@
   },
   {
     "_id": 3,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Төлөөлөн удирдах зөвлөл",
     "color": "type green",
     "firstName": "Бауырбек",
@@ -25,7 +25,7 @@
   },
   {
     "_id": 4,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Төлөөлөн удирдах зөвлөл",
     "color": "type green",
     "firstName": "Бауырбек",
@@ -33,7 +33,7 @@
   },
   {
     "_id": 5,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Ерөнхий боловсролын багш",
     "color": "type purple",
     "firstName": "Бауырбек",
@@ -41,7 +41,7 @@
   },
   {
     "_id": 6,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Мэдээлэл технологийн багш",
     "color": "type blue",
     "firstName": "Бауырбек",
@@ -49,7 +49,7 @@
   },
   {
     "_id": 7,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Ерөнхий боловсролын багш",
     "color": "type purple",
     "firstName": "Бауырбек",
@@ -57,7 +57,7 @@
   },
   {
     "_id": 8,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Төлөөлөн удирдах зөвлөл",
     "color": "type green",
     "firstName": "Бауырбек",
@@ -65,7 +65,7 @@
   },
   {
     "_id": 9,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Ерөнхий боловсролын багш",
     "color": "type purple",
     "firstName": "Бауырбек",
@@ -73,7 +73,7 @@
   },
   {
     "_id": 10,
-    "imgUrl": "/assets/portraits/bek.jpg",
+    "imgUrl": "/assets/portraits/bek.jpeg",
     "type": "Мэдээлэл технологийн багш",
     "color": "type blue",
     "firstName": "Бауырбек",

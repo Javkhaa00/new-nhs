@@ -30,18 +30,25 @@ export default () => {
 
         return (
             <div
-                className="teachers--card"
-                style={{
+                className="teachers--card">
+                <div style={{
+                    position: "absolute", left: 0, right: 0, bottom: 0, top: 0, zIndex: 1,
                     backgroundImage: `url(${el.imgUrl})`,
                     backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover'
-                }}
-            >
-                <div className={`teachers--card--type ${backgroundType}`}>
-                    {el.type}
+                    borderRadius: "24px",
+                    backgroundSize: 'cover',
+                }} />
+                <div style={{
+                    position: "absolute", left: 0, right: 0, bottom: 0, top: 0, zIndex: 2, background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 58.76%, rgba(0, 0, 0, 0.8) 100%)',
+                    borderRadius: "24px"
+                }} />
+                <div style={{ position: "relative", zIndex: 3 }}>
+                    <div className={`teachers--card--type ${backgroundType}`}>
+                        {el.type}
+                    </div>
+                    <div className="teachers--card--first-name">{el.firstName}</div>
+                    <div className="teachers--card--last-name">{el.lastName}</div>
                 </div>
-                <div className="teachers--card--first-name">{el.firstName}</div>
-                <div className="teachers--card--last-name">{el.lastName}</div>
             </div >
         )
     }
