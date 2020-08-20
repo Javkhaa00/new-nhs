@@ -16,7 +16,7 @@ const MapContainer = () => {
     ]
 
     const mapStyles = {
-        height: "450px",
+        height: "400px",
         width: "100%",
         borderRadius: "24px"
     };
@@ -48,8 +48,12 @@ const MapContainer = () => {
 export const Contact = () => {
     return (
         <div className="contacts" id="contacts-section">
-            <div className="contacts--shape"></div>
             <div className="contacts--main">
+                <div className="contacts--shape">
+                    <div className="contacts--main--shape--purple" />
+                    <div className="contacts--main--shape--gray" />
+                    <div className="contacts--main--shape--purple-gray" />
+                </div>
                 <div className="contacts--main--container">
                     <div className="contacts--main--container--texts">
                         <p className="contacts--main--container--texts--title">Холбоо барих</p>
