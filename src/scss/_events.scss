@@ -174,13 +174,14 @@
         width: 0;
         &--button {
           font-size: 12px;
-          // visibility: hidden;
+          visibility: hidden;
         }
       }
     }
   }
   .all-cards {
     padding-top: 10px;
+    height: 100%;
     width: 95%;
     display: flex;
     justify-content: center;
