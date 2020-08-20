@@ -1,140 +1,147 @@
 .contacts {
   width: 100%;
   display: flex;
-  position: relative;
   flex-direction: column;
   &--main {
     width: 100%;
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     flex-direction: column;
-    border-bottom: 1px solid #765ca6;
     background-color: #765ca6;
+    border-bottom: 1px solid #765ca6;
     &--shape {
       width: 100%;
-      position: absolute;
-      left: 0;
-      z-index: 1;
+      position: relative;
+      height: 182px;
+      background-color: $white;
       &--purple {
         content: "";
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-        background-color: white;
+        background-color: #765ca6;
         height: 152px;
         width: 100%;
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         z-index: 1;
       }
       &--gray {
         clip-path: polygon(100% 100%, 0 35%, 0 100%);
-        background-color: white;
+        background-color: #765ca6;
+        opacity: 0.5;
         height: 152px;
         width: 100%;
-        opacity: 0.5;
         position: absolute;
-        top: 0px;
+        bottom: 0px;
         left: 0;
         z-index: 1;
       }
       &--purple-gray {
         clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-        background-color: white;
+        background-color: #765ca6;
+        opacity: 0.5;
         height: 182px;
         width: 100%;
-        opacity: 0.5;
         position: absolute;
-        top: 0;
+        bottom: 0px;
         left: 0;
         z-index: 1;
       }
     }
-    &--container {
-      background-color: #765ca6;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      width: 100%;
+    &--background {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      &--texts {
-        width: 40%;
+      width: 100%;
+      background-color: #765ca6;
+      &--container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        &--title {
-          font-family: Montserrat;
-          font-style: normal;
-          color: $white;
-          font-weight: 700;
-          font-size: 36px;
-          text-transform: uppercase;
+        justify-content: center;
+        align-items: center;
+        &--texts {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          &--title {
+            font-family: Montserrat;
+            font-style: normal;
+            color: $white;
+            font-weight: 700;
+            font-size: 36px;
+            text-transform: uppercase;
+          }
+          &--grid {
+            display: grid;
+            grid-template-columns: auto auto;
+            &--email {
+              &--img {
+                height: 30px;
+                width: 30px;
+                background-color: #f9cd0c;
+                border-radius: 6px;
+                background-image: url("/assets/message.png");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+              }
+            }
+            &--call {
+              padding-left: 10px;
+              &--img {
+                height: 30px;
+                width: 30px;
+                background-color: #00b086;
+                border-radius: 6px;
+                background-image: url("/assets/call.png");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+              }
+            }
+            &--time {
+              &--img {
+                height: 30px;
+                width: 30px;
+                background-color: #ef5324;
+                border-radius: 6px;
+                background-image: url("/assets/clock.png");
+                background-repeat: no-repeat;
+                background-size: auto;
+                background-position: center;
+              }
+            }
+            &--location {
+              padding-left: 10px;
+              &--img {
+                height: 30px;
+                width: 30px;
+                background-color: #3ec1cd;
+                border-radius: 6px;
+                background-image: url("/assets/where.png");
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+          }
         }
-        &--grid {
-          display: grid;
-          grid-template-columns: auto auto;
-          &--email {
-            &--img {
-              height: 30px;
-              width: 30px;
-              background-color: #f9cd0c;
-              border-radius: 6px;
-              background-image: url("/assets/message.png");
-              background-repeat: no-repeat;
-              background-size: auto;
-              background-position: center;
-            }
-          }
-          &--call {
-            padding-left: 10px;
-            &--img {
-              height: 30px;
-              width: 30px;
-              background-color: #00b086;
-              border-radius: 6px;
-              background-image: url("/assets/call.png");
-              background-repeat: no-repeat;
-              background-size: auto;
-              background-position: center;
-            }
-          }
-          &--time {
-            &--img {
-              height: 30px;
-              width: 30px;
-              background-color: #ef5324;
-              border-radius: 6px;
-              background-image: url("/assets/clock.png");
-              background-repeat: no-repeat;
-              background-size: auto;
-              background-position: center;
-            }
-          }
-          &--location {
-            padding-left: 10px;
-            &--img {
-              height: 30px;
-              width: 30px;
-              background-color: #3ec1cd;
-              border-radius: 6px;
-              background-image: url("/assets/where.png");
-              background-repeat: no-repeat;
-              background-position: center;
-            }
-          }
+        #map {
+          width: 40%;
         }
       }
-      #map {
-        width: 40%;
+      &--footer {
+        width: 81%;
+        margin-top: 10px;
+        display: flex;
+        background-color: #765ca6;
+        flex-direction: row;
+        color: #ffffff;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
       }
-    }
-    &--footer {
-      width: 81%;
-      margin-top: 10px;
-      display: flex;
-      flex-direction: row;
-      color: #ffffff;
-      border-top: 1px solid rgba(255, 255, 255, 0.5);
     }
   }
 }
