@@ -190,28 +190,41 @@ a.social:hover {
     height: 110vh;
     &--main {
       height: 100%;
-      &--container {
-        flex-direction: column;
-        padding-bottom: 0px;
-        &--texts {
-          height: 60%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          &--grid {
-            padding-left: 10%;
-          }
-          &--title {
-            font-size: 24px;
-          }
-          &--call {
-            margin-left: 50px;
-          }
+      &--shape {
+        &--purple {
+          height: 82px;
         }
-        #map {
-          margin-bottom: 10px;
-          width: 85%;
+        &--gray {
+          height: 82px;
+        }
+        &--purple-gray {
+          height: 112px;
+        }
+      }
+      &--background {
+        &--container {
+          flex-direction: column;
+          padding-bottom: 0px;
+          &--texts {
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            &--grid {
+              padding-left: 10%;
+            }
+            &--title {
+              font-size: 24px;
+            }
+            &--call {
+              margin-left: 50px;
+            }
+          }
+          #map {
+            margin-bottom: 10px;
+            width: 85%;
+          }
         }
       }
     }
