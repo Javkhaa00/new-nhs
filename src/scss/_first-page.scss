@@ -103,12 +103,9 @@
 
 @include respond-above(xs) {
   .first-page {
-    background-image: url("/assets/usaambassador.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    position: relative;
     height: 100vh;
-    width: 100%;
     &--text-container {
       margin-left: 6%;
       display: flex;
@@ -155,53 +152,17 @@
       content: url("/assets/arrow.png");
     }
     &--layers {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
       &--white {
-        content: "";
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-        background-color: white;
-        height: 152px;
-        width: 100%;
-        position: absolute;
         bottom: -1px;
-        left: 0;
-        z-index: 1;
       }
       &--gray {
-        clip-path: polygon(100% 100%, 0 35%, 0 100%);
-        background-color: white;
-        height: 152px;
-        width: 100%;
-        opacity: 0.5;
-        position: absolute;
-        bottom: 0px;
-        left: 0;
-        z-index: 1;
+        bottom: 0;
       }
       &--gray-layer {
-        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
-        background-color: white;
-        height: 182px;
-        width: 100%;
-        opacity: 0.5;
-        position: absolute;
         bottom: 0;
-        left: 0;
-        z-index: 1;
       }
     }
   }
   .layer {
-    display: flex;
-    align-items: center;
-    background-color: rgba(118, 92, 166, 0.45);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
   }
 }
