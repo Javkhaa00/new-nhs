@@ -89,6 +89,16 @@ export const Contact = () => {
                     </div>
                     <div className="contacts--main--background--footer">
                         <p className="new-nhs">nhs.edu.mn © 2020</p>
+                        <div className="logo-footer">
+                            <img
+                                onClick={() => {
+                                    window.location = "/";
+                                }}
+                                style={{height: "2rem"}}
+                                alt="nest-logo"
+                                src="/assets/logo-white.png"
+                            />
+                        </div>
                         <ul className="social-container">
                             <li><a
                                 href="https://www.facebook.com/NestHigh/"

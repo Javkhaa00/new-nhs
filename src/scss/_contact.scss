@@ -146,6 +146,10 @@
   }
 }
 
+.logo-footer {
+  display: none;
+}
+
 .bolds {
   font-family: "Montserrat";
   font-style: normal;
@@ -236,8 +240,17 @@ a.social:hover {
     font-weight: 400;
     font-size: 12px;
   }
+  .logo-footer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    img {
+      height: 4rem;
+    }
+  }
   .new-nhs {
     width: 40%;
+    display: none;
   }
 }
 
