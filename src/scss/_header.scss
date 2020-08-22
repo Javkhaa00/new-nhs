@@ -27,6 +27,14 @@
         height: 3.5rem;
       }
     }
+    &--logo1 {
+      width: 15%;
+      display: none;
+      justify-content: flex-end;
+      &--img {
+        height: 3.5rem;
+      }
+    }
     &--buttons {
       justify-content: center;
       padding-left: 1%;
@@ -107,11 +115,25 @@ ul {
 
 @include respond-above(xs) {
   .header {
-    &--buttons {
-      display: none;
-    }
+    background-color: unset;
     &--nav {
+      &--buttons {
+        position: absolute;
+        background-color: $white;
+        top: 0;
+        right: -230px;
+        width: 180px;
+        height: 100vh;
+      }
       &--logo {
+        display: none;
+        width: unset;
+        &--img {
+          margin-left: 24px;
+        }
+      }
+      &--logo1 {
+        display: flex;
         width: unset;
         &--img {
           margin-left: 24px;
@@ -125,9 +147,13 @@ ul {
     }
   }
   ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    // display: none;
   }
   li {
-    display: none;
+    // display: none;
+  }
+  #buttons {
   }
 }

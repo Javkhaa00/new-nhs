@@ -15,6 +15,16 @@ const Header = () => {
                         src="/assets/logo.png"
                     />
                 </div>
+                <div className="header--nav--logo1">
+                    <img
+                        onClick={() => {
+                            window.location = "/";
+                        }}
+                        className="header--nav--logo--img"
+                        alt="nest-logo"
+                        src="/assets/logo-colored.png"
+                    />
+                </div>
                 <div className="header--nav--buttons">
                     <ul>
                         <li>
