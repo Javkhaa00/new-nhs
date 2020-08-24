@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
 
+
+
 const Header = () => {
+
+    const [classActive, setActive] = useState("hamburger");
+    const [SideMenu, setSideMenu] = useState("header--nav--buttons");
+    const [stick, setStick] = useState("bar1");
+    const [stick1, setStick1] = useState("bar3");
+
     return (
         <div className="header">
             <div className="header--nav">
@@ -25,7 +33,7 @@ const Header = () => {
                         src="/assets/logo-colored.png"
                     />
                 </div>
-                <div className="header--nav--buttons">
+                <div className={SideMenu}>
                     <ul>
                         <li>
                             <Link
@@ -123,8 +131,28 @@ const Header = () => {
                         Бүртгүүлэх
                     </a>
                 </div>
+                <div
+                    className={classActive}
+                    onClick={() => {
+                        if (classActive === "hamburger") {
+                            setActive("change");
+                            setSideMenu("menu-right");
+                            setStick("stick");
+                            setStick1("stick1");
+                        } else {
+                            setActive("hamburger");
+                            setSideMenu("header--nav--buttons");
+                            setStick("bar1");
+                            setStick1("bar3");
+                        };
+                    }}
+                >
+                    <div className={stick}></div>
+                    <div className="invis"></div>
+                    <div className={stick1}></div>
+                </div>
             </div>
-        </div>
+        </div >
     )
 };
 

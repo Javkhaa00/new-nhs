@@ -113,14 +113,47 @@ ul {
   transform: scale(1, 1);
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1,
+.bar3 {
+  width: 36px;
+  height: 2px;
+  background-color: $white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.invis {
+  width: 35px;
+  height: 2px;
+  margin: 6px 0;
+}
+
+.change .bar1 {
+  position: asbolute;
+  right: 2em;
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 @include respond-above(xs) {
   .header {
     background-color: unset;
     &--nav {
       &--buttons {
+        display: flex;
+        align-items: flex-start;
         position: absolute;
         background-color: $white;
         top: 0;
+        transition: 0.5s ease-in-out;
         right: -230px;
         width: 180px;
         height: 100vh;
@@ -149,11 +182,59 @@ ul {
   ul {
     display: flex;
     flex-direction: column;
+    margin: 0 !important;
+    // padding: 0;
     // display: none;
   }
   li {
     // display: none;
   }
   #buttons {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .hamburger {
+    z-index: 100;
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+  }
+  .change {
+    z-index: 100;
+    position: absolute;
+    right: 2em;
+  }
+
+  .stick,
+  .stick1 {
+    width: 36px;
+    height: 2px;
+    background-color: $black;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  .change .stick {
+    position: asbolute;
+    right: 2em;
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .change .stick1 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .menu-right {
+    z-index: 1;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    background-color: $white;
+    transition: 0.5s ease-in-out;
+    top: 0;
+    right: 0px;
+    width: 240px;
+    height: 100vh;
   }
 }
