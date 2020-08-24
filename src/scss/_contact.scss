@@ -230,10 +230,11 @@ a.social:hover {
             width: 85%;
           }
         }
+        &--footer {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
       }
-    }
-    &--footer {
-      margin-top: 50px;
     }
   }
   .texts {
