@@ -147,6 +147,9 @@ ul {
   .header {
     background-color: unset;
     &--nav {
+      &--menu-text {
+        padding-top: 60px;
+      }
       &--buttons {
         display: flex;
         align-items: flex-start;
@@ -182,9 +185,6 @@ ul {
   ul {
     display: flex;
     flex-direction: column;
-    margin: 0 !important;
-    // padding: 0;
-    // display: none;
   }
   li {
     // display: none;

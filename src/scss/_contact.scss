@@ -194,6 +194,7 @@ a.social:hover {
     height: 110vh;
     &--main {
       height: 100%;
+      background-color: $white;
       &--shape {
         &--purple {
           height: 82px;
@@ -206,6 +207,7 @@ a.social:hover {
         }
       }
       &--background {
+        background-color: #765ca6;
         &--container {
           flex-direction: column;
           padding-bottom: 0px;

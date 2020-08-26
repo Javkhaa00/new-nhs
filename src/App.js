@@ -3,6 +3,7 @@ import './App.scss';
 import Home from './pages/Home';
 import Header from './containers/Header';
 import NewsDetail from './pages/NewsDetail';
+import AllNews from './pages/AllNews';
 
 import {
   BrowserRouter as Router,
@@ -17,6 +18,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/news/:newsId" exact={true} component={NewsDetail} />
+          <Route path="/allnews" exact={true} component={AllNews} />
           <Route path="/" component={Home} />
         </Switch>
       </Router>

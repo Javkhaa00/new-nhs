@@ -34,8 +34,8 @@ const Header = () => {
                     />
                 </div>
                 <div className={SideMenu}>
-                    <ul>
-                        <li>
+                    <div className="header--nav--menu-text">
+                        <div>
                             <Link
                                 onClick={() => {
                                     window.location = "/";
@@ -49,8 +49,8 @@ const Header = () => {
                                 className="header--texts" >
                                 Нүүр
                             </Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <Link
                                 className="header--texts"
                                 activeClass="active"
@@ -63,8 +63,8 @@ const Header = () => {
                             >
                                 Бидний тухай
                             </Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <Link
                                 className="header--texts"
                                 activeClass="active"
@@ -77,8 +77,8 @@ const Header = () => {
                             >
                                 Хөтөлбөр
                             </Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <Link
                                 className="header--texts"
                                 activeClass="active"
@@ -91,8 +91,8 @@ const Header = () => {
                             >
                                 Багш нар
                             </Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <Link
                                 className="header--texts"
                                 activeClass="active"
@@ -105,8 +105,8 @@ const Header = () => {
                             >
                                 Мэдээ
                             </Link>
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <Link
                                 className="header--texts"
                                 activeClass="active"
@@ -119,8 +119,8 @@ const Header = () => {
                             >
                                 Холбоо барих
                             </Link>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className="header--nav--sign-up">
                     <a
