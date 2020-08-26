@@ -19,6 +19,10 @@
     display: flex;
     align-items: center;
     width: 100%;
+    &--menu-text {
+      display: flex;
+      flex-direction: row;
+    }
     &--logo {
       width: 15%;
       display: flex;
@@ -148,6 +152,7 @@ ul {
     background-color: unset;
     &--nav {
       &--menu-text {
+        flex-direction: column;
         padding-top: 60px;
       }
       &--buttons {
@@ -214,7 +219,7 @@ ul {
     margin: 4px 0;
     transition: 0.4s;
   }
-  
+
   .change .stick {
     position: asbolute;
     right: 2em;

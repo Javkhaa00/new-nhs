@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { div, animateScroll as scroll } from "react-scroll";
 import { useHistory } from "react-router-dom";
 
 
@@ -39,9 +39,9 @@ const Header = () => {
                     />
                 </div>
                 <div className={SideMenu}>
-                    <ul className="header--nav--menu-text">
+                    <div className="header--nav--menu-text">
                         <div>
-                            <Link
+                            <div
                                 onClick={() => goHome("firstpage-section")}
                                 id="buttons"
                                 spy={true}
@@ -50,10 +50,10 @@ const Header = () => {
                                 duration={500}
                                 className="header--texts" >
                                 Нүүр
-                            </Link>
+                            </div>
                         </div>
                         <div>
-                            <Link
+                            <div
                                 className="header--texts"
                                 activeClass="active"
                                 onClick={() => goHome("thousand-section")}
@@ -64,10 +64,10 @@ const Header = () => {
                                 duration={500}
                             >
                                 Бидний тухай
-                            </Link>
+                            </div>
                         </div>
                         <div>
-                            <Link
+                            <div
                                 className="header--texts"
                                 onClick={() => goHome("currics-section")}
                                 activeClass="active"
@@ -78,10 +78,10 @@ const Header = () => {
                                 duration={500}
                             >
                                 Хөтөлбөр
-                            </Link>
+                            </div>
                         </div>
                         <div>
-                            <Link
+                            <div
                                 className="header--texts"
                                 onClick={() => goHome("teachers-section")}
                                 activeClass="active"
@@ -92,10 +92,10 @@ const Header = () => {
                                 duration={500}
                             >
                                 Багш нар
-                            </Link>
+                            </div>
                         </div>
                         <div>
-                            <Link
+                            <div
                                 className="header--texts"
                                 activeClass="active"
                                 onClick={() => goHome("events-section")}
@@ -106,10 +106,10 @@ const Header = () => {
                                 duration={500}
                             >
                                 Мэдээ
-                            </Link>
+                            </div>
                         </div>
                         <div>
-                            <Link
+                            <div
                                 className="header--texts"
                                 onClick={() => goHome("contacts-section")}
                                 activeClass="active"
@@ -120,9 +120,9 @@ const Header = () => {
                                 duration={500}
                             >
                                 Холбоо барих
-                            </Link>
+                            </div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
                 <div className="header--nav--sign-up">
                     <a
