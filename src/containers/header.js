@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useHistory } from "react-router-dom";
 
 
 
 const Header = () => {
-
+    const history = useHistory();
     const [classActive, setActive] = useState("hamburger");
     const [SideMenu, setSideMenu] = useState("header--nav--buttons");
     const [stick, setStick] = useState("bar1");
     const [stick1, setStick1] = useState("bar3");
+
+    const goHome = (section) => {
+        history.push(`/?section=${section}`);
+    }
 
     return (
         <div className="header">
@@ -34,13 +39,10 @@ const Header = () => {
                     />
                 </div>
                 <div className={SideMenu}>
-                    <div className="header--nav--menu-text">
+                    <ul className="header--nav--menu-text">
                         <div>
                             <Link
-                                onClick={() => {
-                                    window.location = "/";
-                                }}
-                                to="firstpage-section"
+                                onClick={() => goHome("firstpage-section")}
                                 id="buttons"
                                 spy={true}
                                 smooth={true}
@@ -54,7 +56,7 @@ const Header = () => {
                             <Link
                                 className="header--texts"
                                 activeClass="active"
-                                to="thousand-section"
+                                onClick={() => goHome("thousand-section")}
                                 id="buttons"
                                 spy={true}
                                 smooth={true}
@@ -67,8 +69,8 @@ const Header = () => {
                         <div>
                             <Link
                                 className="header--texts"
+                                onClick={() => goHome("currics-section")}
                                 activeClass="active"
-                                to="currics-section"
                                 id="buttons"
                                 spy={true}
                                 smooth={true}
@@ -81,8 +83,8 @@ const Header = () => {
                         <div>
                             <Link
                                 className="header--texts"
+                                onClick={() => goHome("teachers-section")}
                                 activeClass="active"
-                                to="teachers-section"
                                 id="buttons"
                                 spy={true}
                                 smooth={true}
@@ -96,7 +98,7 @@ const Header = () => {
                             <Link
                                 className="header--texts"
                                 activeClass="active"
-                                to="events-section"
+                                onClick={() => goHome("events-section")}
                                 id="buttons"
                                 spy={true}
                                 smooth={true}
@@ -109,8 +111,8 @@ const Header = () => {
                         <div>
                             <Link
                                 className="header--texts"
+                                onClick={() => goHome("contacts-section")}
                                 activeClass="active"
-                                to="contacts-section"
                                 id="buttons"
                                 spy={true}
                                 smooth={true}
@@ -120,7 +122,7 @@ const Header = () => {
                                 Холбоо барих
                             </Link>
                         </div>
-                    </div>
+                    </ul>
                 </div>
                 <div className="header--nav--sign-up">
                     <a

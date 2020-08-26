@@ -14,8 +14,8 @@ import {
 function App() {
   return (
     <div>
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route path="/news/:newsId" exact={true} component={NewsDetail} />
           <Route path="/allnews" exact={true} component={AllNews} />

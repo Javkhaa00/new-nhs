@@ -18,7 +18,11 @@ export const Events = () => {
                 <NewsCards />
             </div>
             <div className="events--wrapper--every1">
-                <div className="events--wrapper--every1--button-phone">Бүх мэдээ </div>
+                <div className="events--wrapper--every1--button-phone"
+                    onClick={() => {
+                        window.location = "/allnews";
+                    }}
+                >Бүх мэдээ </div>
             </div>
         </div>
     )
