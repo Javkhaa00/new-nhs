@@ -112,7 +112,7 @@ export const Contact = () => {
                                 target="_blank"
                                 className="social"
                             >
-                                <FontAwesomeIcon icon={faInstagram} size="lg" />
+                                <FontAwesomeIcon icon={faFacebook} size="lg" /><FontAwesomeIcon icon={faFacebook} size="lg" />
                             </a></li>
                             <li><a
                                 href="https://www.youtube.com/channel/UCcti8Ugy2CBj0bCVW1A5Mbg"

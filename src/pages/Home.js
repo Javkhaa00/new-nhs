@@ -12,7 +12,9 @@ import Thousand from '../containers/Thousand';
 import Teachers from '../containers/Teachers';
 
 export const Home = (props) => {
+    
     const { search } = props.location;
+    
     useEffect(() => {
         const section = search.split("=")[1];
         scroller.scrollTo(section || "firstpage-section", {

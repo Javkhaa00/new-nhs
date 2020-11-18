@@ -2,8 +2,10 @@ import React from 'react';
 import news from '../json/news.json';
 
 export const NewsDetail = (props) => {
+    
     console.log(props.match.params);
     const { newsId } = props.match.params
+
     return (
         <div className="news-detail">
             <div className="news-detail--wallpaper">

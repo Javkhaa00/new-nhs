@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { div, animateScroll as scroll } from "react-scroll";
 import { useHistory } from "react-router-dom";
 
-
-
 const Header = () => {
+    
     const history = useHistory();
     const [classActive, setActive] = useState("hamburger");
     const [SideMenu, setSideMenu] = useState("header--nav--buttons");
