@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 
 const Header = () => {
-    
+
     const history = useHistory();
     const [classActive, setActive] = useState("hamburger");
     const [SideMenu, setSideMenu] = useState("header--nav--buttons");

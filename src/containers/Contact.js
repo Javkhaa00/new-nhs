@@ -94,7 +94,7 @@ export const Contact = () => {
                                 onClick={() => {
                                     window.location = "/";
                                 }}
-                                style={{height: "2rem"}}
+                                style={{ height: "2rem" }}
                                 alt="nest-logo"
                                 src="/assets/logo-white.png"
                             />
@@ -112,7 +112,7 @@ export const Contact = () => {
                                 target="_blank"
                                 className="social"
                             >
-                                <FontAwesomeIcon icon={faFacebook} size="lg" /><FontAwesomeIcon icon={faFacebook} size="lg" />
+                                <FontAwesomeIcon icon={faInstagram} size="lg" />
                             </a></li>
                             <li><a
                                 href="https://www.youtube.com/channel/UCcti8Ugy2CBj0bCVW1A5Mbg"
